@@ -1,0 +1,134 @@
+.control {
+	position: relative;
+	display: inline-block;
+	width: 2.7rem;
+	height: 2.7rem;
+	background: #000;
+	cursor: pointer;
+	font-size: 0.1px;
+	color: white;
+	transition: background 150ms;
+}
+
+.control:hover {
+	background: #fff;
+}
+
+.control[data-filter]:after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: calc(50% - 6px);
+	left: calc(50% - 6px);
+	border: 2px solid;
+	border-radius: 10px;
+	background: #000;
+	transition: background-color 150ms, border-color 150ms;
+}
+
+.control[data-sort]:after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	top: calc(50% - 6px);
+	left: calc(50% - 6px);
+	transform: translateY(1px) rotate(45deg);
+}
+
+.control[data-sort*=":desc"]:after {
+	transform: translateY(-4px) rotate(-135deg);
+}
+
+.mixingcon {
+	overflow: hidden;
+	padding: 0 5px;
+}
+
+.mixitup-control-active {
+	background: #eee;
+}
+
+.mixitup-control-active[data-filter]:after {
+	background: transparent;
+}
+
+.control:first-of-type {
+	border-radius: 10px 0 0 10px;
+}
+
+.control:last-of-type {
+	border-radius: 0 10px 10px 0;
+}
+
+.control[data-filter] + .control[data-sort] {
+	margin-left: .75rem;
+}
+
+.control[data-filter=".green"] {
+	color: #91e6c7;
+}
+
+.control[data-filter=".blue"] {
+	color: #5ecdde;
+}
+
+.control[data-filter=".pink"] {
+	color: #d595aa;
+}
+
+.control[data-filter=".red"] {
+	color: #FF0000;
+}
+
+.control[data-filter="none"] {
+	color: #2f2f2f;
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+.mix,
+.gap {
+	width: 100%;
+	padding: 5px;
+}
+
+/* 2 Columns */
+@media screen and (min-width:480px) {
+	.mix,
+	.gap {
+		width: 50%;
+	}
+
+}
+
+/* 3 Columns */
+@media screen and (min-width:768px) {
+	.mix,
+	.gap {
+		width: 33.33%;
+	}
+
+}
+
+/* 4 Columns */
+@media screen and (min-width:961px) {
+	.mix,
+	.gap {
+		width: 25%;
+	}
+
+}
+
+.mix img {
+	height: auto;
+	width: 100%;
+	display: block;
+	float: left;
+}

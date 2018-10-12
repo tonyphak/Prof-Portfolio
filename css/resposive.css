@@ -1,0 +1,258 @@
+@media(max-width: 991.98px) {
+	.jumbotron {
+		padding: 60px 0;
+	}
+
+	/** About **/
+    .about .about-me,
+	.service-right,
+	.trusted .owl {
+	    margin-top: 60px;
+	}
+	.about-me h4 {
+		font-size: 40px;
+	}
+	
+	.service .service-box:nth-child(3) {
+		margin-bottom: 0;
+	}
+	
+	.service .service-box:nth-child(4) {
+		margin-bottom: 0;
+	}
+
+	/** Counter **/
+	.counter_up i {
+		font-size: 45px;
+	}
+
+	.counter_bar {
+		font-size: 45px;
+	}
+
+	/** Navbar **/
+	.navbar {
+		margin-top: 0 !important;
+		background: #000 !important;
+		padding: 15px;
+	}
+
+	.logo-color {
+		max-height: 25px;
+	}
+
+	.navbar-light .navbar-toggler {
+		border-color: rgba(255, 255, 255, 0.3);
+		color: rgba(255, 255, 255, 0.5);
+		background: none;
+	}
+
+	.navbar li a {
+		color: #fff !important;
+	}
+
+	.navbar li a.active {
+		color: #eab34c !important;
+	}
+
+	.nav-link {
+		color: #666 !important;
+	}
+
+	.nav-item {
+		border-bottom: solid 1px #ccc;
+		padding: 10px 0;
+	}
+
+	.nav-item:last-child {
+		border-bottom: none;
+	}
+
+	.logo-color {
+		display: block;
+	}
+
+	.logo-white {
+		display: none;
+	}
+}
+
+@media(min-width: 768px) {
+	.blog-thumbnail {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.blog-thumbnail img {
+		object-fit: cover;
+		position: absolute;
+		min-width: 100%;
+		min-height: 100%;
+	}
+}
+
+@media(max-width: 767.98px) {
+	section {
+		padding: 60px 0;
+	}
+	
+	.jumbotron h1 {
+		font-size: 45px !important;
+	}
+
+	.jumbotron h2 {
+		font-size: 38px;
+	}
+
+	.jumbotron p {
+		font-size: 24px;
+	}
+	.about-progress {
+		flex-direction: column;
+	}
+
+	.about-progress .media-body {
+		margin: 5px 0 25px;
+	}
+	
+	.about-progress h3 {
+		margin-bottom: 10px!important;
+	}
+	.about-progress:last-child .media-body {
+		margin-bottom: 0;
+	}
+	.counter_up h3 {
+		font-size: 20px;
+	}
+	.blog .blog-bg {
+		order: 5;
+		margin-bottom: 30px;
+	}
+	.blog .row:last-child .blog-bg {
+		margin-bottom: 0;
+	}
+
+	.form-row:last-child .form-group {
+		margin-bottom: 60px;
+	}
+}
+
+@media(max-width: 575.98px) {
+	/*Typography */
+	h2 {
+		font-size: 45px;
+	}
+	
+	.jumbotron {
+		text-align: center;
+	}
+	
+    .jumbotron h1 {
+		font-size: 40px !important;
+	}
+
+	.jumbotron h2 {
+		font-size: 32px;
+	}
+
+	.jumbotron p {
+		font-size: 20px;
+	}
+	.jumbotron .g-button{
+		padding: 8px 25px;
+		font-size: 15px;
+	}
+	.jumbotron .g-button-outline{
+		padding: 8px 25px;
+		font-size: 15px;
+	}
+	.jumbotron ul li:last-child i{
+		margin-right: 0;
+	}
+	.about-me h4 {
+		font-size: 26px;
+	}
+
+	.about-me p,
+	.about-progress h3,
+	.service-left p,
+	.trusted .trusted-left p,
+	.trusted .trusted-right p{
+		font-size: 16px;
+	}
+
+	.about .about-photo img {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	.about .about-image-box {
+		width: 85%;
+		top: 15px;
+		left: 16px;
+	}
+
+	.about-skil h3 {
+		font-size: 28px;
+	}
+	.service .service-box:nth-child(3) {
+		margin-bottom: 30px;
+	}
+	
+	.service-left .g-button{
+		font-size: 15px;
+	}
+	
+	.service-left .list-icon li,
+	.service-right .service-detail p,
+	.trusted .owl .item p,
+	.blog-bg p {
+		font-size: 14px;
+	}
+	
+	.trusted .owl .image {
+		margin-bottom: 20px !important;
+	}
+	.portfolio .g-button-filter {
+    	padding: 5px 10px;
+    	font-size: 12px;
+	}
+	.contact-2 .media-body h3 {
+		font-size: 20px;
+	}
+
+	.contact-2 .media-body p {
+		font-size: 16px;
+	}
+	
+	.contact-2 i {
+		font-size: 30px;
+	}
+
+	.social i {
+		padding: 6px 6px;
+		font-size: 23px;
+	}
+}
+
+@media(max-width: 395.98px) {
+	.jumbotron h2 {
+    	font-size: 26px;
+	}
+
+	.jumbotron h1 {
+    font-size: 30px !important;
+	}
+
+	.jumbotron p {
+    font-size: 18px;
+	}
+
+	.jumbotron .g-button,
+	.jumbotron .g-button-outline,
+	.service-left .g-button,
+	.contact .g-button-2,
+	.g-button-2 {
+		font-size: 13px;
+	}
+}

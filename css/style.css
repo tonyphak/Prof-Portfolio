@@ -1,0 +1,751 @@
+/*
+  Theme Name: FlexArt - Responsive Portfolio HTML5 Landing Page Template
+  Author: ipgroups
+  Description: Portfolio HTML5 Bootstrap 4 Template.
+  Version: 1.0
+================================================/
+
+
+1. Global CSS
+	1.1 General CSS
+	1.2 Typography
+2. Master Color Setting
+	2.1. Background Color Setting
+	2.2 Text Color setting
+3. COMMON CSS
+4. Navbar
+5. Banner
+6. About
+7. service
+8. Trust
+9. Counter Up
+10. Portfolio
+11. Blog
+12. Contact
+13. Footer
+=============================================*/
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+/* ========================
+    1. Global CSS
+======================== */
+
+/* -----------------------
+    1.1. General CSS
+----------------------- */
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	position: relative;
+}
+
+section {
+	padding: 75px 0;
+}
+
+a:hover,
+button:hover,
+select:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:focus,
+button:focus {
+	text-decoration: none;
+	outline: none !important;
+}
+
+/* -----------------------
+    1.2. Typography 
+----------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Dosis', sans-serif;
+	color: #fff;
+	line-height: 1.2;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1 {
+	font-size: 60px;
+	letter-spacing: 2px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 50px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	margin: 0;
+}
+
+h3 {
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none
+}
+
+p {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	margin: 0;
+}
+
+/* ================================
+    2. Master Color Setting
+================================= */
+
+/*----------------------------------
+    2.1. Background Color Setting
+----------------------------------*/
+
+.g-button,
+.progress-bar,
+.box-heading:after {
+	background-color: #eab34c;
+}
+
+.about,
+.blog .blog-bg,
+.contact {
+	background-color: #031219;
+}
+
+/*--------------------------------
+   2.2 Text Color setting
+--------------------------------*/
+.jumbotron h2,
+.name-1,
+.about-skil h3,
+.counter_bar,
+.blog-bg .name-color,
+.social i,
+.g-button-2 {
+	color: #eab34c;
+}
+
+.service-right .service-detail h3,
+.counter_up h3,
+.trusted .name,
+.trusted .post {
+	color: #59687c;
+}
+
+.service-left p,
+.service-left .list-icon li,
+.service-right .service-detail p,
+.trusted .trusted-left,
+.trusted .owl .item p {
+	color: #708198 !important;
+}
+
+.service-left h2,
+.trusted h2,
+.portfolio h2,
+.blog h2 {
+	color: #454545;
+}
+
+/*================================
+   3. COMMON CSS
+================================*/
+.box-heading:after {
+	display: block;
+	content: '';
+	width: 100px;
+	height: 2px;
+	margin: 10px auto 20px auto;
+}
+
+/*================================
+          4. Navbar
+================================*/
+.navbar {
+	background: none !important;
+	-webkit-transition: all 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+	-moz-transition: all 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+	-o-transition: all 600ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+	padding: 3px 15px;
+}
+
+.nav-link {
+	color: #fff !important;
+	padding: 0px 15px !important;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.navbar li a.active {
+	color: #eab34c !important;
+}
+
+.nav-background {
+	background: #000 !important;
+	padding: 5px 15px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	margin-top: 0;
+}
+
+.nav-background a {
+	color: #fff !important;
+}
+
+.logo-color {
+	display: none;
+}
+
+.nav-background .logo-color {
+	display: block;
+}
+
+.nav-background .logo-white {
+	display: none;
+}
+
+/*================================
+       5. Banner
+================================*/
+.jumbotron {
+	padding: 120px 0;
+	background-image: url(../images/htmlwallpaper.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	margin-bottom: 0px;
+	text-align: left;
+	position: relative;
+}
+
+.jumbotron.fullscreen {
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.jumbotron h2 {
+	font-size: 45px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.jumbotron p {
+	font-weight: 400;
+	letter-spacing: 2px;
+	font-size: 28px;
+	color: #ffffff;
+}
+
+.jumbotron i {
+	margin: 35px 15px 0 0;
+	font-size: 25px;
+	color: #fff;
+}
+
+.jumbotron a:hover i {
+	color: #eab34c;
+}
+
+.g-button {
+	padding: 8px 30px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: #333333;
+	border: none;
+}
+
+.g-button:hover {
+	background-color: #ffffff;
+	color: #000;
+}
+
+.g-button-outline {
+	color: #ffffff;
+	padding: 8px 30px;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	border-color: #eab34c;
+}
+
+.g-button-outline:hover {
+	border-color: #ffffff;
+	background-color: transparent;
+}
+
+/*================================
+       6. About
+================================*/
+.about .about-image-box {
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	top: 25px;
+	left: 3px;
+	border: solid 7px #eab34c;
+}
+
+.about .about-photo {
+	align-self: center;
+	text-align: center;
+}
+
+.about .about-photo img {
+	margin: 0 auto;
+	width: 95%;
+}
+
+.about .about-me {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.about-me .box-heading::after {
+	margin: 10px auto 20px 0;
+}
+
+.about-me h4 {
+	font-size: 40px;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+
+.about-me p {
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+
+.about-skil h3 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.about-progress h3 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+	width: 30%;
+}
+
+.about-progress:last-child  h3 {
+	margin-bottom: 0;
+}
+
+.about-progress .media-body {
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 100%;
+}
+
+.progress {
+	display: flex;
+	height: 6px !important;
+	overflow: hidden;
+	max-width: 200px;
+}
+
+/*================================
+       7. service
+================================*/
+
+.service-left .box-heading::after {
+	margin: 10px auto 20px 0;
+}
+
+.service-left .list-icon{
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.service-left .list-icon li{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 2;
+}
+
+.service-left .list-icon li i{
+	margin-right: 10px;
+	color: #eab34c;
+	font-size: 20px;
+}
+.service-left .g-button {
+	margin-top: 20px;
+}
+.service-left .g-button:hover {
+	background-color: #031219;
+	color: #fff;
+}
+
+.service-left p {
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+.service .service-box {
+	margin: 0 0 30px 0;
+	text-align: left;
+}
+
+.service .service-box:nth-child(3) {
+		margin-bottom: 0;
+}
+	
+.service .service-box:nth-child(4) {
+		margin-bottom: 0;
+}
+
+.service-right .service-box .service-detail {
+	border: dotted 1px;
+	padding: 25px;
+	border-radius: 5px;
+	box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.22);
+	-webkit-transition: all 600ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	transition: all 600ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.service-right .service-detail:hover {
+	transform: scale(1.05);
+}
+
+.service-right .service-detail i {
+	font-size: 45px;
+}
+
+.service-right .service-detail h3 {
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-size: 17px;
+	margin: 10px 0 15px;
+}
+
+.service-right .service-detail p {
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+/*================================
+        9. Counter Up
+================================*/
+.counter_up .row {
+	margin-bottom: -30px;
+}
+
+.counter-box {
+	margin: 0 0 30px;
+}
+
+.counter_up {
+	background-color: #f1f1f1;
+}
+
+.conter-1 {
+	background-color: #ffffff;
+	padding: 30px;
+	border-radius: 5px;
+	border: dotted 2px;
+	box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.22);
+}
+
+.counter_bar {
+	font-size: 55px;
+	line-height: 1.8;
+}
+
+.counter_up h3 {
+	font-size: 23px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.counter_up i {
+	font-size: 50px;
+}
+
+/*================================
+       8. Trust
+================================*/
+
+.trusted .trusted-left p {
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+.trusted .box-heading::after {
+	margin: 10px auto 20px 0;
+}
+
+.trusted .owl .image {
+	width: 110px !important;
+	margin-bottom: 15px;
+}
+
+.trusted .name {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.trusted .post {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.trusted .owl .item p {
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+/*================================
+       10. Portfolio
+================================*/
+
+.portfolio {
+	background-color: #f1f1f1;
+}
+
+.portfolio .g-button-filter {
+	padding: 5px 15px;
+	color: #ffffff;
+	font-size: 14px;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	background-color: #031219;
+	border: none;
+	margin: 5px;
+}
+
+.portfolio .g-button-filter.mixitup-control-active {
+	background: #eab34c;
+}
+
+.portfolio .mix {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio .mix .mix-hover {
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	top: 100%;
+	bottom: 5px;
+	background: rgba(0, 0, 0, 0.8);
+	font-size: 25px;
+	transition: all ease 0.5s;
+	overflow: hidden;
+}
+
+.portfolio .mix:hover .mix-hover {
+	top: 5px;
+}
+
+.portfolio .mix .mix-hover .icons {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-top: -25px;
+}
+
+.portfolio .mix .mix-hover .icons a {
+	display: inline-block;
+	line-height: 50px;
+	width: 50px;
+	color: #eab34c;
+	border: 1px solid;
+	border-radius: 50%;
+	margin: 0 3px;
+}
+
+.portfolio .mix .mix-hover .icons a:hover {
+	background: #eab34c;
+	border-color: #eab34c;
+	color: #fff;
+}
+
+
+/*================================
+          11. Blog
+================================*/
+
+.blog .blog-bg .blog-size {
+	padding: 45px 30px;
+}
+
+.blog-bg .blog-title {
+	color: #ffffff;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	line-height: 1.5;
+}
+
+.blog-bg p {
+	color: #ffffff;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+.g-button-2 {
+	padding: 8px 20px;
+	font-size: 14px;
+	border-color: #eab34c;
+}
+
+.g-button-2 i {
+	color: inherit;
+}
+
+.blog-bg .name-color {
+	font-size: 14px;
+}
+
+.blog .row {
+	padding: 0 15px;
+}
+
+.blog .blog-bg .btn {
+	margin: 25px 0 20px;
+}
+
+/*================================
+      12. Contact
+================================*/
+.contact {
+	color: #ffffff !important;
+}
+
+.contact-inpt {
+	background-color: rgba(255, 255, 255, 0) !important;
+	border: 1px solid #eab34c;
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	color: #ffffff !important;
+}
+
+.contact-inpt:focus {
+	border: 1px solid #eab34c;
+	box-shadow: 0 0 0 0 #000000;
+}
+
+.contact .g-button-2 {
+	width: 100%;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.contact-2 i {
+	border: dashed 1px #eab34c;
+	padding: 10px;
+	font-size: 40px;
+	color: #fff;
+	transition: all ease 0.5s;
+}
+
+.contact-2 .media:hover i {
+	background-color: #eab34c;
+	color: #ffffff;
+}
+
+.contact .row {
+	align-items: flex-end;
+}
+
+.form-row:last-child .form-group {
+	margin-bottom: 0;
+}
+
+/*================================
+      13. Footer
+================================*/
+.my-footer {
+	padding: 40px 0;
+	background-color: #131313;
+	color: #fff;
+}
+
+.my-footer h4 {
+	font-size: 25px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.my-footer p {
+	font-size: 14px;
+}
+
+.social {
+	padding-bottom: 15px;
+}
+
+.social i {
+	padding: 8px 8px;
+	font-size: 30px;
+	transition: all ease 0.5s;
+	margin-bottom: 20px;
+	border: dashed 1px #eab34c;
+	box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .50);
+}
+
+.social a:hover i {
+	color: #fff;
+	background-color: #031219;
+	border: dashed 1px #eab34c;
+}
+
